@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>第一课作业3</title>
+	</head>
+	<style>
+       @keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+ 50% {
+    transform: translateX(-33.333%);
+  }
+ 
+  100% {
+    transform: translateX(-66.666%);
+  }
+}
+
+.view {
+  width: 100%; 
+  overflow: hidden;
+}
+
+.slider{
+    width: 300%;
+    height: 30vh;
+    display: flex;
+}
+
+.slide{
+    flex: 0 0 auto;
+    width: 33.333%;
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+.slider {
+  animation: slide 5s infinite;
+}
+
+
+    </style>
+	
+	<body>
+		<h1 style="text-align: center;">第三个作业</h1>
+        <div class="view">
+        <div class="slider">
+            <div class="slide" style="background-image: url(img/bg2.jpg);"></div>
+            <div class="slide" style="background-image: url(img/bg1.jpg);"></div>
+            <div class="slide" style="background-image: url(img/bg2.jpg);"></div>
+            
+        </div>
+    </div>
+	</body>
+</html>
